@@ -1,9 +1,10 @@
+require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
 const session = require("express-session")
 const MongoStore = require("connect-mongodb-session")(session)
-const MONGODB_URI = 'mongodb+srv://Arnav:superarnav@cluster0.s2mlu.mongodb.net/notes?retryWrites=true&w=majority&appName=Cluster0';
-const port = 3000;
+const port = process.env.PORT || 3000;
+const MONGODB_URI = process.env.MONGODB_URI;
 const app = express();
 const path = require("path")
 const indexRoute = require("./routes/notes");
