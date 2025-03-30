@@ -1,4 +1,4 @@
-# Prac-Project
+# NOTES-APP
 
 This is a Node.js application designed for practicing backend development. It leverages modern tools and libraries to create a functional and scalable backend system.
 
