@@ -1,0 +1,171 @@
+/* styles.css */
+
+/* Base styles */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Form styling */
+  .bx-border-radius {
+    max-width: 28rem;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  /* Input fields */
+  input[type="text"] {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.625rem;
+    color: #111827;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    background-color: #f9fafb;
+    font-size: 0.875rem;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  }
+  
+  /* Submit button */
+  button[type="submit"] {
+    color: white;
+    background-color: #1d4ed8;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    width: 100%;
+    padding: 0.625rem 1.25rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #1e40af;
+  }
+  
+  button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  }
+  
+  /* Note container */
+  .note-container {
+    max-width: 28rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-left: 4px solid #3b82f6;
+  }
+  
+  /* Note title */
+  h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-3xl {
+    font-size: 1.875rem;
+  }
+  
+  .mb-8 {
+    margin-bottom: 2rem;
+  }
+  
+  /* Note description */
+  p {
+    color: #4b5563;
+    margin-bottom: 1rem;
+  }
+  
+  /* Delete button */
+  form[action="/delete-note"] button {
+    color: white;
+    background-color: #dc2626;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form[action="/delete-note"] button:hover {
+    background-color: #b91c1c;
+  }
+  
+  form[action="/delete-note"] button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.3);
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #111827;
+      color: #f9fafb;
+    }
+    
+    .bx-border-radius {
+      background-color: #1f2937;
+      border-color: #374151;
+    }
+    
+    input[type="text"] {
+      background-color: #374151;
+      border-color: #4b5563;
+      color: white;
+    }
+    
+    input[type="text"]::placeholder {
+      color: #9ca3af;
+    }
+    
+    .note-container {
+      background-color: #1f2937;
+      border-left: 4px solid #3b82f6;
+    }
+    
+    h1 {
+      color: white;
+    }
+    
+    p {
+      color: #d1d5db;
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 640px) {
+    .bx-border-radius, .note-container {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+  
